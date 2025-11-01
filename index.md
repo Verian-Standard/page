@@ -7,7 +7,7 @@
   <p class="badges">
     <a href="#"><img src="https://img.shields.io/badge/status-pre--alpha-orange" alt="Status"></a>
     <a href="https://github.com/Verian-Standard/spec"><img src="https://img.shields.io/badge/specification-draft-blue" alt="Specification"></a>
-    <a href="https://github.com/Verian-Standard/spec/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue" alt="License"></a>
+    <a href="#licensing--intellectual-property"><img src="https://img.shields.io/badge/license-FRAND_(Patent_Pending)-blueviolet" alt="License"></a>
     <a href="https://verian.org"><img src="https://img.shields.io/badge/website-verian.org-brightgreen" alt="Website"></a>
   </p>
 </p>
@@ -45,7 +45,7 @@ The Verian Standard is built on a foundation of three core concepts, applied in 
 
 ## How It Works: Visualizing Trust
 
-An AI model generates text with a `<cite>` tag. The **Verian Verification Protocol (CVP)** then independently validates, corrects, and renders the final, truthful statement with a citation marker that transparently indicates the verification journey.
+An AI model generates text with a `<cite>` tag. The **Verian Verification Protocol (VVP)** then independently validates, corrects, and renders the final, truthful statement with a citation marker that transparently indicates the verification journey.
 
 #### Rendered User Experience:
 
@@ -53,69 +53,35 @@ An AI model generates text with a `<cite>` tag. The **Verian Verification Protoc
 
 <div class="legend">
   <p><strong class="cite-verified">[3] Verified.</strong> The claim was a direct, contextually-correct match with the source.</p>
-  <p><strong class="cite-corrected">[2*] Corrected.</strong> The CVP found the source but updated the text for contextual accuracy (e.g., calculated a current age).</p>
-  <p><strong class="cite-resolved">[1*] Ambiguity Resolved.</strong> The source was ambiguous (e.g., date format), and the CVP resolved it based on established rules.</p>
+  <p><strong class="cite-corrected">[2*] Corrected.</strong> The VVP found the source but updated the text for contextual accuracy (e.g., calculated a current age).</p>
+  <p><strong class="cite-resolved">[1*] Ambiguity Resolved.</strong> The source was ambiguous (e.g., date format), and the VVP resolved it based on established rules.</p>
 </div>
-
----
-
-## The Verian Trust Graph
-
-The power of Verian lies in its strict architectural separation between the **probabilistic act of generation** and the **deterministic act of verification**. The LLM's output is never trusted; it is a proposal that must be rigorously validated.
-
-```mermaid
-graph TD
-    %% Define Node Styles
-    style LabelNode fill:none,stroke:none,color:#000,font-weight:bold
-
-    subgraph "Phase 1: Ground Truth Creation (Deterministic)"
-        A["Source Document<br/>(PDF, Image, Video)"]
-        B{"Deterministic Ingestion Tools<br/>(OCR, PDF-to-Text, FFMPEG)"}
-        C["<b>Ground Truth</b><br/>(Structured, Verifiable Text)"]
-        A --> B --> C
-    end
-
-    subgraph "Phase 2: Claim Generation (Probabilistic & Untrusted)"
-        D["LLM Engine"]
-        E["Untrusted Claim with <code>&lt;cite&gt;</code> tag<br/><i>'The invoice is $0.00'</i>"]
-    end
-
-    subgraph "Phase 3: Verification & Reconciliation (Deterministic & Trusted)"
-        F{"<b>Verian Verification Protocol (CVP)</b><br/>The Reconciliation Engine"}
-        G["<b>Verified & Corrected Output</b><br/><b>'The invoice is $450.00<span class='cite-verified'>[3]</span>'</b>"]
-    end
-
-    subgraph "Phase 4: Final Presentation"
-        H(("End User"))
-    end
-
-    %% Define Connections
-    C -->|Input for Generation| D --> E
-    C -->|Reference for Truth| F
-    E -->|Claim to be Verified| F
-    F --> G --> H
-```
-<p class="caption">The user only ever interacts with the trusted, deterministic output of the Verian Verification Protocol.</p>
 
 ---
 
 ## Join the Verian SIG: Shape the Future of Trusted AI
 
-To ensure the Verian Standard is a universal solution, it will be governed by **Verian SIG, Inc.**, an independent corporation created and directed by its members. Our mission is to foster an ecosystem where **Verian Verified** output is the universal expectation for reliable AI.
+The Verian Standard is managed by **Verian SIG, Inc.**, the official body responsible for developing the standard and fostering its ecosystem.
 
-We invite organizations to join us at one of three membership levels.
+The foundational intellectual property, including the core technology **(patent pending)** and the **"Verian Verified"™** brand, is owned by **FileLasso, Inc.** and is exclusively licensed to Verian SIG, Inc. This structure ensures a stable, well-funded foundation for the standard's long-term development.
 
-| Level | Annual Fee | Key Benefits | Ideal For |
-| :--- | :---: | :--- | :--- |
-| **Promoter** | Contact Us | • Seat on the Board of Directors<br/>• Direct the standard's strategy and roadmap<br/>• Chair Technical Working Groups (TWGs)<br/>• Ultimate influence over specification and IP | Industry leaders committed to defining the foundational principles of verifiable AI. |
-| **Contributor**| TBD | • Participate and vote in TWGs<br/>• Early access to specification drafts<br/>• Influence technical development<br/>• Use "Verian Certified" logo on qualified products (once program launches) | Organizations actively building solutions to produce **Verian Verified** output. |
-| **Adopter** | Free | • License to use the final Verian specification<br/>• Access official documentation and tools<br/>• Use "Verian Certified" logo on qualified products (once program launches) | Any organization wanting to build solutions that generate **Verian Verified** claims. |
+Our mission is to drive the industry-wide adoption of this foundational technology by providing a clear, transparent, and fair licensing framework. We invite organizations to join us at one of three membership levels.
 
-<div class="callout">
-  <h3>Become a Founding Promoter Member</h3>
-  <p>This is a ground-floor opportunity to lead the movement for trustworthy AI. We are currently recruiting a select group of Founding Promoter Members to form the initial Board of Directors. If your organization is interested in this unique leadership opportunity, please contact our formation committee.</p>
-  <a href="mailto:contact@verian.org" class="button">Express Interest</a>
-</div>
+| Level       | Annual Fee        | Key Benefits                                                                                                                                                             | Ideal For                                                                                        |
+| :---------- | :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
+| **Promoter**  | Contact Us        | • Seat on the Board of Directors<br/>• Direct the standard's strategy and roadmap<br/>• **Influence the FRAND licensing framework**<br/>• Chair Technical Working Groups (TWGs) | Industry leaders committed to shaping the foundational principles and business model of verifiable AI. |
+| **Contributor** | TBD               | • **License to implement the standard under FRAND terms**<br/>• Participate and vote in TWGs<br/>• Early access to specification drafts<br/>• Influence technical development | Organizations actively building commercial solutions that produce **Verian Verified** output.     |
+| **Adopter**     | Free              | • Access official documentation and tools<br/>• **Right to license the standard under published FRAND terms**<br/>• Use "Verian Certified" logo on qualified products (once program launches) | Any organization wanting to build and deploy solutions that generate **Verian Verified** claims.        |
+
+---
+
+## Become a Founding Promoter Member
+
+This is a ground-floor opportunity to lead the movement for trustworthy AI. We are currently recruiting a select group of Founding Promoter Members to form the initial Board of Directors.
+
+As a founder, you will work alongside **FileLasso, Inc.**, the foundational IP contributor, to establish the SIG's bylaws, IPR Policy, and initial FRAND licensing framework. If your organization is interested in this unique leadership opportunity, please contact our formation committee.
+
+<a href="mailto:contact@verian.org" class="button">Express Interest</a>
 
 ---
 
@@ -136,7 +102,26 @@ This is your opportunity to shape the future of trusted AI from the ground up.
   </div>
 </div>
 
+---
+
+The Verian ecosystem operates under a clear, multi-part intellectual property framework designed for transparency and fair value exchange.
+
+<div class="concept-cards">
+  <div class="card">
+    <h3>Specification License</h3>
+    <p>The Verian Standard specifications and all related documentation are licensed under the <a href="https://github.com/Verian-Standard/spec/blob/main/LICENSE">Apache 2.0 License</a>. This allows for broad public review, discussion, and feedback to ensure the standard is robust and well-understood.</p>
+  </div>
+  <div class="card">
+    <h3>Patent License (SEPs)</h3>
+    <p>The technology essential to implementing the standard is covered by **pending patent applications** owned by <strong>FileLasso, Inc.</strong> A license to any resulting patents will be granted to members via Verian SIG, Inc. on <strong>Fair, Reasonable, and Non-Discriminatory (FRAND)</strong> terms. This is a royalty-bearing license, ensuring continued R&D and support for the standard.</p>
+  </div>
+  <div class="card">
+    <h3>Trademark License</h3>
+    <p>The "Verian Verified"™ name and logo are trademarks of <strong>FileLasso, Inc.</strong> and are licensed to Verian SIG, Inc. for its official qualification program. The right to use these marks on compliant products is a benefit for members who have licensed the standard.</p>
+  </div>
+</div>
+
 <div class="footer">
-  <p>The Verian Standard specifications and documentation are licensed under the <a href="https://github.com/Verian-Standard/spec/blob/main/LICENSE">Apache 2.0 License</a>.</p>
-  <p>Governance by Verian SIG, Inc., a member-led corporation.</p>
+  <p>Documentation is licensed under Apache 2.0. Implementation rights for patents and trademarks are subject to the Verian SIG Membership and IPR agreements.</p>
+  <p>Copyright &copy; {%- assign year = "now" | date: "%Y" -%} {{ year }} FileLasso, Inc. All rights reserved.</p>
 </div>
