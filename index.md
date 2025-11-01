@@ -1,9 +1,3 @@
-```markdown
----
-layout: default
-title: Verian - The Standard for Verifiable AI
----
-
 <p align="center" class="hero">
   <br />
   <h1 align="center">Verian</h1>
