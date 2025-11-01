@@ -19,7 +19,7 @@ We welcome different forms of contribution based on your expertise.
       <li>Where does generative AI fail you today?</li>
       <li>What would "verifiable proof" look like in your workflow?</li>
     </ul>
-    <a href="mailto:contact@verian.org?subject=My Verian Use Case" class="button">Share Your Expertise</a>
+    <a href="mailto:verian-admin@filelasso.com?subject=My Verian Use Case" class="button">Share Your Expertise</a>
   </div>
   <div class="card">
     <h3>2. Develop the Standard (For Technologists)</h3>
@@ -39,7 +39,7 @@ We welcome different forms of contribution based on your expertise.
       <li>Publish benchmarks and case studies.</li>
       <li>Explore the theoretical limits of verification.</li>
     </ul>
-    <a href="mailto:contact@verian.org?subject=Academic Collaboration Inquiry" class="button">Collaborate on Research</a>
+    <a href="mailto:verian-admin@filelasso.com?subject=Academic Collaboration Inquiry" class="button">Collaborate on Research</a>
   </div>
 </div>
 

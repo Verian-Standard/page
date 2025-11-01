@@ -53,8 +53,8 @@ An AI model generates text with a `<cite>` tag. The **Verian Verification Protoc
 
 <div class="legend">
   <p><strong class="cite-verified">[3] Verified.</strong> The claim was a direct, contextually-correct match with the source.</p>
-  <p><strong class="cite-corrected">[2*] Corrected.</strong> The VVP found the source but updated the text for contextual accuracy (e.g., calculated a current age).</p>
-  <p><strong class="cite-resolved">[1*] Ambiguity Resolved.</strong> The source was ambiguous (e.g., date format), and the VVP resolved it based on established rules.</p>
+  <p><strong class="cite-corrected"><span class="cite-corrected">[2</span><span class="cite-asterisk-amber">*</span><span class="cite-corrected">]</span> Corrected.</strong> The VVP found the source but updated the text for contextual accuracy (e.g., calculated a current age).</p>
+  <p><strong class="cite-resolved"><span class="cite-resolved">[1</span><span class="cite-asterisk-purple">*</span><span class="cite-resolved">]</span> Ambiguity Resolved.</strong> The source was ambiguous (e.g., date format), and the VVP resolved it based on established rules.</p>
 </div>
 
 ---
@@ -81,7 +81,7 @@ This is a ground-floor opportunity to lead the movement for trustworthy AI. We a
 
 As a founder, you will work alongside **FileLasso, Inc.**, the foundational IP contributor, to establish the SIG's bylaws, IPR Policy, and initial FRAND licensing framework. If your organization is interested in this unique leadership opportunity, please contact our formation committee.
 
-<a href="mailto:contact@verian.org" class="button">Express Interest</a>
+<a href="mailto:verian-admin@filelasso.com" class="button">Express Interest</a>
 
 ---
 
