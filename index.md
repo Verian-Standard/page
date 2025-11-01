@@ -85,6 +85,16 @@ As a founder, you will work alongside **FileLasso, Inc.**, the foundational IP c
 
 ---
 
+## Help Solve the Verification Paradox
+
+In high-stakes fields like law and medicine, the cost of manually verifying AI output often negates the efficiency gains. This "Verification-Value Paradox" is the single biggest barrier to adopting generative AI for professional use.
+
+The Verian Standard is being built by a community of industry experts and technologists to solve this problem. By contributing your expertise, you can help shape the future of trustworthy AI.
+
+<a href="/contribute" class="button">Learn How to Contribute</a>
+
+---
+
 ## Get Involved
 
 This is your opportunity to shape the future of trusted AI from the ground up.
