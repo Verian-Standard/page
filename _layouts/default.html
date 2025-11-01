@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF--8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: "Verian Standard" }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --brand-blue: #005595;
+        --brand-amber: #D9A000;
+        --brand-purple: #B366B3;
+        --text-color: #333;
+        --heading-color: #111;
+        --bg-color: #ffffff;
+        --bg-light-gray: #f7f7f7;
+        --border-color: #e1e4e8;
+        --link-color: var(--brand-blue);
+      }
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+      }
+      h1, h2, h3, h4 {
+        font-weight: 600;
+        color: var(--heading-color);
+        margin-top: 1.5em;
+        margin-bottom: 0.8em;
+      }
+      h1 { font-size: 2.5em; font-weight: 700; }
+      h2 { font-size: 2em; border-bottom: 1px solid var(--border-color); padding-bottom: 0.3em; margin-top: 2.5em;}
+      h3 { font-size: 1.5em; }
+      p { margin: 0 0 1em; }
+      a { color: var(--link-color); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      code {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        background-color: var(--bg-light-gray);
+        padding: 0.2em 0.4em;
+        border-radius: 6px;
+        font-size: 85%;
+      }
+      blockquote {
+        border-left: 4px solid var(--border-color);
+        padding-left: 1rem;
+        color: #555;
+        margin-left: 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5em 0;
+        display: block;
+        overflow-x: auto;
+      }
+      th, td {
+        padding: 0.8em 1em;
+        border: 1px solid var(--border-color);
+        text-align: left;
+      }
+      th { background-color: var(--bg-light-gray); font-weight: 600; }
+      tr:nth-child(even) { background-color: var(--bg-light-gray); }
+
+      /* Page-specific Styles */
+      .hero h1 { margin: 0; }
+      .tagline { font-size: 1.5em; color: #555; margin-bottom: 1.5em; }
+      .badges img { margin: 0 4px; }
+      
+      .concept-cards, .cta-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+      .card {
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5rem;
+        background-color: var(--bg-color);
+        transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      }
+      .card h3 { margin-top: 0; }
+      
+      .legend { margin-top: 1.5rem; padding-left: 1rem; border-left: 3px solid var(--bg-light-gray); }
+      .legend p { margin-bottom: 0.5rem; }
+      
+      .caption { text-align: center; color: #666; font-style: italic; font-size: 0.9em; }
+
+      /* Citation Styles */
+      .cite-verified { color: var(--brand-blue); }
+      .cite-corrected { color: var(--brand-blue); }
+      .cite-resolved { color: var(--brand-blue); }
+      .cite-asterisk-amber { color: var(--brand-amber); }
+      .cite-asterisk-purple { color: var(--brand-purple); }
+      
+      .button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: var(--brand-blue);
+        color: white;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+      }
+      .button:hover {
+        background-color: #003d6b;
+        text-decoration: none;
+        color: white;
+      }
+      
+      .callout {
+        background-color: var(--bg-light-gray);
+        border: 1px solid var(--border-color);
+        border-left: 5px solid var(--brand-blue);
+        border-radius: 8px;
+        padding: 1.5rem 2rem;
+        margin: 2rem 0;
+      }
+      
+      .footer {
+        text-align: center;
+        margin-top: 4rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+        color: #777;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      {{ content }}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+  </body>
+</html>
