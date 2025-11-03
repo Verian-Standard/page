@@ -1,6 +1,9 @@
 <p align="center" class="hero">
   <br />
   <h1 align="center">Verian</h1>
+<p align="center" class="definition">
+  <i>Derived from the Latin <b>verus</b> ("truth") and the suffix <b>-an</b> ("relating to"), Verian means "of, or relating to, truth."</i>
+</p>
   <p class="tagline">
     The Standard for Verifiable AI
   </p>
