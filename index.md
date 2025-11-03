@@ -22,9 +22,9 @@ Generative AI holds immense promise, but its utility is critically undermined by
 
 **Verian** is an open standard and verification protocol designed to ground generative AI in objective reality. Instead of treating an AI's output as an opaque black box, Verian provides a framework for making AI claims **transparent, auditable, and deterministically verifiable** against source documents.
 
-### The Three Core Concepts of Verification
+### The Three Tiers of Verification
 
-The Verian Standard is built on a foundation of three core concepts, applied in sequence to any AI-generated claim.
+The Verian Standard is built on a foundation of three verification tiers, applied in sequence to any AI-generated claim.
 
 <div class="concept-cards">
   <div class="card">
@@ -37,7 +37,7 @@ The Verian Standard is built on a foundation of three core concepts, applied in 
   </div>
   <div class="card">
     <h3>3. Adversarial Resilience</h3>
-    <p>Can the claim be interpreted in bad faith? This final check addresses ambiguity that could be exploited. The protocol flags and resolves these issues for user transparency and robustness.</p>
+    <p>Can the claim be interpreted in bad faith? This final check addresses ambiguity that could be exploited. The protocol flags and resolves these issues for user transparency and robustness by using commonly understood truth finding algorithms.</p>
   </div>
 </div>
 
@@ -102,7 +102,7 @@ This is your opportunity to shape the future of trusted AI from the ground up.
 <div class="cta-cards">
   <div class="card">
     <h3>Read the Specification</h3>
-    <p>Dive into the technical details, core concepts, and the protocol architecture. The spec is the single source of truth for the Verian standard.</p>
+    <p>Dive into the technical details, validation tiers, and the protocol architecture. The spec is the single source of truth for the Verian standard.</p>
     <a href="https://github.com/Verian-Standard/spec" class="button">View Spec on GitHub</a>
   </div>
   <div class="card">
@@ -123,7 +123,7 @@ The Verian ecosystem operates under a clear, multi-part intellectual property fr
   </div>
   <div class="card">
     <h3>Patent License (SEPs)</h3>
-    <p>The technology essential to implementing the standard is covered by **pending patent applications** owned by <strong>FileLasso, Inc.</strong> A license to any resulting patents will be granted to members via Verian SIG, Inc. on <strong>Fair, Reasonable, and Non-Discriminatory (FRAND)</strong> terms. This is a royalty-bearing license, ensuring continued R&D and support for the standard.</p>
+    <p>The technology essential to implementing the standard is covered by <strong>pending patent applications</strong> owned by <strong>FileLasso, Inc.</strong> A license to any resulting patents will be granted to members via Verian SIG, Inc. on <strong>Fair, Reasonable, and Non-Discriminatory (FRAND)</strong> terms. This is a royalty-bearing license, ensuring continued R&D and support for the standard.</p>
   </div>
   <div class="card">
     <h3>Trademark License</h3>
